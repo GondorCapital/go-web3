@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/chenzhijie/go-web3"
+	"github.com/GondorCapital/go-web3"
 	"github.com/ethereum/go-ethereum/crypto"
 )
 

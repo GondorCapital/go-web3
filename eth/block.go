@@ -52,6 +52,7 @@ func (e *Eth) getBlock(method string, args ...interface{}) (*types.Block, error)
 	if head.TxHash != types.EmptyRootHash && len(body.Transactions) == 0 {
 		return nil, fmt.Errorf("server returned empty transaction list but block header indicates transactions")
 	}
+
 	// Load uncles because they are not included in the block response.
 	var uncles []*types.Header
 	// TODO
@@ -78,5 +79,8 @@ func (e *Eth) getBlock(method string, args ...interface{}) (*types.Block, error)
 	// 	}
 	// }
 	// Fill the sender cache of transactions in the block.
-	return types.NewBlockWithHeader(head).WithBody(body.Transactions, uncles), nil
+	return types.NewBlockWithHeader(head).WithBody(types.Body{
+		Transactions: body.Transactions,
+		Uncles:       uncles,
+	}), nil
 }

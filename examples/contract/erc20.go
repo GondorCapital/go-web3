@@ -5,8 +5,8 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/chenzhijie/go-web3"
-	"github.com/chenzhijie/go-web3/types"
+	"github.com/GondorCapital/go-web3"
+	"github.com/GondorCapital/go-web3/types"
 	"github.com/ethereum/go-ethereum/common"
 )
 

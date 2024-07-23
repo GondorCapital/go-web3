@@ -7,9 +7,9 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/chenzhijie/go-web3/rpc"
-	"github.com/chenzhijie/go-web3/types"
-	"github.com/chenzhijie/go-web3/utils"
+	"github.com/GondorCapital/go-web3/rpc"
+	"github.com/GondorCapital/go-web3/types"
+	"github.com/GondorCapital/go-web3/utils"
 	"github.com/ethereum/go-ethereum/accounts"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"

@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/chenzhijie/go-web3/rpc/codec"
+	"github.com/GondorCapital/go-web3/rpc/codec"
 	"github.com/valyala/fasthttp"
 )
 
